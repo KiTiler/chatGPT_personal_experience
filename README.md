@@ -6,9 +6,9 @@
   1. 首先需要在一些服务提供商处购买代理服务,价格一般为10元左右一个月,它会提供一些节点(不过很多代理提供商的网站也需要配置好后才能访问,比较尴尬).也可在一些地方找到免费的节点,例如<https://github.com/freefq/free>
   2. 安装和配置连接软件.如果是购买的服务,一般它会提供教程,可以按照它的教程来使用.如果是使用免费节点,可以先下载clash,它可在下面链接中找到下载地址,不过可能会比较慢<https://github.com/Kr328/ClashForAndroid/releases><https://github.com/Dreamacro/clash/releases>
   3. 在下载好clash软件后,在配置中复制获取的url,点击下载
-   ![clash](img\clash1.png)
+   ![clash](/img/clash1.png)
    再在设置中选择要访问的结点,再试着用google搜索,如果能搜索到,即配置成功
-   ![clash2](img\clash2.png)
+   ![clash2](/img/clash2.png)
 - 在配置好网络环境后,可访问chatGPT的网页端,网址为<https://chat.openai.com/>在此可进行试用,如果遇到了拦截或者无法访问的情况,需根据具体问题进行解决,比较麻烦,主要是ip地址被拒绝或者使用的代理结点被标记为异常结点,如果找不到解决办法可使用下一种方法.
   
 ## 使用国内镜像
@@ -24,21 +24,21 @@
   - <http://xzhiku.com>
   - <http://xzhiku.com>
   不过这些网站的账号安全性不能完全保证,也可到telegram上找更多售卖的地方,一般带5美元额度的账号在几块到几十块都有左右,120美元额度的价格一般为一百多,如果是有GPT4的API的账号,现阶段很贵,一般为几千元.
-  2. 在拥有一个账号之后可登录openai的官网,登录自己的账号,查看自己账号的信息,主要是要获取账号的key,这是完成下面步骤的关键.
+/img  2. 在拥有一个账号之后可登录openai的官网,登录自己的账号,查看自己账号的信息,主要是要获取账号的key,这是完成下面步骤的关键.
   3. 访问<https://github.com/Yidadaa/ChatGPT-Next-Web>
-   ![访问页面](img\chatGPT_next_web.png)
+   ![访问页面](/img/chatGPT_next_web.png)
    点击Deploy按钮,会进入Vercel的界面
-   ![vercel](img\2.png)
+   ![vercel](/img/2.png)
    点击GitHub按钮,这会创建一个GitHub仓库
-   ![vercel部署](img\3.png)
+   ![vercel部署](/img/3.png)
    点击create之后,会让你配置两个环境变量,第一个是我们在上面获取的key,另一个为访问的密码,密码可以随意设置
-   ![环境变量配置](img\4.png)
+   ![环境变量配置](/img/4.png)
    点击Deploy之后就算部署好了,它会提供一个域名,但这个域名只有配置VPN才能访问,解决办法就是配置域名解析,将国内能访问的域名解析到部署好的此项目.首先需要获取一个域名,可以在阿里云,腾讯云等服务提供商处购买,在此不赘述.获取域名之后,进入刚部署后的页面,点击进入settings
-   ![设置页面](img\settings.png)
+   ![设置页面](/img/settings.png)
     再点击Domains区域,在这里即可进行域名解析的配置,即将自己的域名输入,然后点击add按钮,按照它的指示进行操作
-  ![域名解析](img\域名解析.png)
+  ![域名解析](/img/域名解析.png)
   最后看到这个页面,即为成功
-  ![解析结果](img\解析结果.png)
+  ![解析结果](/img/解析结果.png)
   现在已经能不挂VPN,直接访问刚配置好的域名,即可访问该页面了
 
 ## 使用chatGPT的api进行
@@ -47,16 +47,16 @@
 - 访问chatGPT的api需要一个良好的网络环境,在国内的电脑上直接运行是不行的,而配置代理来运行也常常出错,于是我选则了在ip地址为国外(推荐在美国地区)的服务器上运行
   1. 购买服务器.在很多服务器提供商处可以购买服务器(腾讯云,阿里云等),一般选则2核4g的轻型应用服务器就够了,ip地址需为非亚洲地区.
   2. 在购买好服务器后,会获得一个IP地址和root用户的密码,然后可以在自己的电脑上下载这些软件
-   ![软件图](img\软件.png)
+   ![软件图](/img/软件.png)
    其中,xftp可以对服务器上的文件金星上传和下载等操作,xshell可以远程登录到服务器上,用命令行的形式对服务器进行操作,而vscode是一个轻量级但功能强大的编辑器,支持多种插件,其中便有远程登录的插件,可以直接在服务器上编写和运行代码.
    其中,xshell下载并打开,右击左侧会话管理器,选择新建会话
-   ![xshell](img\xshell.png)
+   ![xshell](/img/xshell.png)
    需要在主机出填入服务器的ip地址,点击确定,并根据提示输入用户名的密码,即可登录到主机上,可进行环境配置等操作.为了接下来的操作,可以在这一步完成python的安装,python版本需要在3.7以上.
-   ![xshell2](img\xshell2.png)
+   ![xshell2](/img/xshell2.png)
    并且在配置好xshell之后,点击上面菜单栏的xftp按钮,即可直接使用xftp进行文件的传输
-   ![xshell3](img\xshell3.png)
+   ![xshell3](/img/xshell3.png)
    vscode的使用也很简单,只需在下载好后点击左侧Extensions,并搜索ssh,下载第一个插件
-   ![xshell3](img\vscode.png)
+   ![xshell3](/img/vscode.png)
    在配置好ip地址,输入用户名和密码,即可登录到远程服务器上,进行代码编写操作.
   3. 调用ChatGPT的接口非常简单,详细内容可参考官方网站<https://platform.openai.com/docs/introduction>
   - 下面进行简单的介绍.首先利用安装好python所需的包`pip install openai`,再在代码中导入openai
